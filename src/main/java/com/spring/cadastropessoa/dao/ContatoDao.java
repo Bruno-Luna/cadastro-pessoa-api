@@ -1,6 +1,6 @@
-package com.elotech.cadastropessoa.dao;
+package com.spring.cadastropessoa.dao;
 
-import com.elotech.cadastropessoa.model.ContatoModel;
+import com.spring.cadastropessoa.model.ContatoModel;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;

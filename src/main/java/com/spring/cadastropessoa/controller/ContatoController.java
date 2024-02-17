@@ -1,8 +1,8 @@
-package com.elotech.cadastropessoa.controller;
+package com.spring.cadastropessoa.controller;
 
-import com.elotech.cadastropessoa.dao.ContatoDao;
-import com.elotech.cadastropessoa.model.ContatoModel;
-import com.elotech.cadastropessoa.service.ContatoService;
+import com.spring.cadastropessoa.dao.ContatoDao;
+import com.spring.cadastropessoa.model.ContatoModel;
+import com.spring.cadastropessoa.service.ContatoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

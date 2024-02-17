@@ -1,4 +1,4 @@
-package com.elotech.cadastropessoa.service;
+package com.spring.cadastropessoa.service;
 
 import org.springframework.stereotype.Service;
 

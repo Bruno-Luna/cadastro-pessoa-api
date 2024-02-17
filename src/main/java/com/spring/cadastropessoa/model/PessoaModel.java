@@ -1,4 +1,4 @@
-package com.elotech.cadastropessoa.model;
+package com.spring.cadastropessoa.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

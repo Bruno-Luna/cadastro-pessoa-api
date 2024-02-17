@@ -1,6 +1,6 @@
-package com.elotech.cadastropessoa.service;
+package com.spring.cadastropessoa.service;
 
-import com.elotech.cadastropessoa.dao.PessoaDao;
+import com.spring.cadastropessoa.dao.PessoaDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

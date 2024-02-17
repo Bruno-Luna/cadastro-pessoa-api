@@ -1,4 +1,4 @@
-package com.elotech.cadastropessoa;
+package com.spring.cadastropessoa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
