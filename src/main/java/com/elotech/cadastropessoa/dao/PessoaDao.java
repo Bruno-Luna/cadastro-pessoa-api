@@ -26,12 +26,14 @@ public class PessoaDao {
 
     @Transactional
     public void inserirPessoa(PessoaModel pessoa) {
-        Query query = em.createNativeQuery("INSERT INTO Pessoa (nome, cpf, datanascimento) " +
-                " VALUES (:nome, :cpf, :datanascimento)");
+        Query query = em.createNativeQuery("INSERT INTO Pessoa (nome, cpf, datanascimento, email, senha) " +
+                " VALUES (:nome, :cpf, :datanascimento, :email, :senha)");
 
         query.setParameter("nome", pessoa.getNome());
         query.setParameter("cpf", pessoa.getCpf());
         query.setParameter("datanascimento", pessoa.getDatanascimento());
+        query.setParameter("email", pessoa.getEmail());
+        query.setParameter("senha", pessoa.getSenha());
 
         query.executeUpdate();
     }

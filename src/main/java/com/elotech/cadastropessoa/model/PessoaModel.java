@@ -29,6 +29,13 @@ public class PessoaModel {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate datanascimento;
 
+    @NotBlank(message = "Login é obrigatório.")
+    @Column(unique=true)
+    private String email;
+
+    @NotBlank(message = "Senha é obrigatório.")
+    private String senha;
+
     @OneToMany(mappedBy = "pessoa", cascade = CascadeType.REMOVE)
     @JsonIgnoreProperties("pessoa")
     private List<ContatoModel> contato;
@@ -71,5 +78,21 @@ public class PessoaModel {
 
     public void setContato(List<ContatoModel> contato) {
         this.contato = contato;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 }
