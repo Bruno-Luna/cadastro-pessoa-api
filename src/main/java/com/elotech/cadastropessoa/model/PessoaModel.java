@@ -29,7 +29,7 @@ public class PessoaModel {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate datanascimento;
 
-    @NotBlank(message = "Login é obrigatório.")
+    @NotBlank(message = "Email é obrigatório.")
     @Column(unique=true)
     private String email;
 
